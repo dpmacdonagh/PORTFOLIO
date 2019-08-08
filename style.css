@@ -1,0 +1,210 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #444;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 100%;
+  font-weight: 300;
+  font-family: "Open Sans", sans-serif;
+}
+
+a,
+a:visited {
+  color: inherit;
+  will-change: color;
+  transition: 0.2s color ease-out;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5f2c82;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 3%;
+}
+
+.intro {
+  background: #5f2c82;
+  background: -webkit-linear-gradient(to bottom, #49a09d, #5f2c82);
+  background: linear-gradient(to bottom, #49a09d, #5f2c82);
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .content {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro .content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro .content h2 {
+  font-size: 1rem;
+}
+
+@media (min-width: 460px) {
+  .intro .content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro .content h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 740px) {
+  .intro .content h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro .content h2 {
+    font-size: 2rem;
+  }
+}
+
+.portfolio {
+  padding: 8rem 0;
+}
+
+.about-me {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  max-width: 30rem;
+  text-align: center;
+}
+
+.about-me h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.about-me p {
+  font-weight: 300;
+  line-height: 1.2rem;
+  margin: 1rem 0 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.about-me li {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.about-me li:last-of-type {
+  padding-right: 0;
+}
+
+.skills-projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills-projects h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.skills {
+  flex-basis: 100%;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.projects {
+  flex-basis: 100%;
+}
+
+.skills li {
+  padding-bottom: 0.5rem;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.project img {
+  padding-right: 1rem;
+  max-width: 250px;
+  max-height: 141px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.project .description {
+  text-align: center;
+  width: 100%;
+}
+
+.project h5 {
+  line-height: 1.2;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.project .links {
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  line-height: 1.2;
+}
+
+@media (min-width: 540px) {
+  .project {
+    flex-wrap: nowrap;
+  }
+
+  .project .description {
+    text-align: left;
+  }
+}
+
+@media (min-width: 740px) {
+  .skills-projects {
+    flex-wrap: nowrap;
+  }
+
+  .skills-projects h4 {
+    text-align: left;
+  }
+
+  .skills-projects .skills {
+    flex-basis: 40%;
+  }
+
+  .skills-projects .projects {
+    flex-basis: 60%;
+  }
+
+  .skills {
+    padding-right: 8rem;
+    text-align: left;
+  }
+}
