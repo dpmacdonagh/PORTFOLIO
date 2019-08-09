@@ -177,6 +177,7 @@ h5 {
 .projects {
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  text-align: center;
 }
 
 .skills li {
@@ -190,10 +191,14 @@ h5 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 3rem;
+  text-align: center;
+}
+
+.project a {
+  width: 100%;
 }
 
 .project img {
-  padding-right: 1rem;
   max-width: 250px;
   max-height: 141px;
   margin: 0 auto;
@@ -201,7 +206,6 @@ h5 {
 }
 
 .project .description {
-  text-align: center;
   width: 100%;
 }
 
@@ -217,10 +221,16 @@ h5 {
   .project {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    text-align: left;
   }
 
-  .project .description {
-    text-align: left;
+  .project a {
+    width: initial;
+  }
+
+  .project img {
+    padding-right: 1rem;
+    margin-bottom: 0;
   }
 }
 
